@@ -33,4 +33,18 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberWithMoreThan5Notation() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("LCCDIX");
+        Assertions.assertEquals(459,result);
+    }
+
+    @Test
+    public void numberWithMoreThan7Notation() {
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("MDCVIIIX");
+        Assertions.assertEquals(1616,result);
+    }
 }

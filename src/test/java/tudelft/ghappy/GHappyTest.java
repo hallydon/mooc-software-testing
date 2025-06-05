@@ -24,5 +24,11 @@ public class GHappyTest {
         boolean result = new GHappy().gHappy("xxggxxgx");
         Assertions.assertFalse(result);
     }
+    @Test
+    public void MultipleG() {
+        boolean result = new GHappy().gHappy("xxgggxxgggx");
+        Assertions.assertTrue(result);
+    }
+
 
 }
